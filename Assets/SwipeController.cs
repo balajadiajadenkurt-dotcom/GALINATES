@@ -4,44 +4,43 @@ using UnityEngine;
 
 public class SwipeController : MonoBehaviour
 {
-    [SerializedField] Vector3 pageStep;
-    [SerializedField] RectTransform levelPagesRect;
+    [SerializeField] int maxPage;
+    int currentPage;
+    Vector3 targetPos;
+    [SerializeField] Vector3 pageStep;
+    [SerializeField] RectTransform levelPagesRect;
 
-    [SerializedField] float tweenTime;
-    [SerializedField] LeanTweenType tweenType;
-
+    [SerializeField] float tweenTime;
+    [SerializeField] LeanTweenType tweenType;
 
     private void Awake()
     {
         currentPage = 1;
         targetPos = levelPagesRect.localPosition;
-     }
-
+    }
 
     public void Next()
     {
-         if(currentPage<maxPage)  
-         {
-         currentPage++;
-         targetPos += pageStep;
-         MovePage;
-         }
+        if (currentPage < maxPage)
+        {
+            currentPage++;
+            targetPos += pageStep;
+            MovePage();
+        }
     }
 
     public void Previous()
     {
-       if(currentPage > 1)
-       {
-        currentPage--;
-        targetPos-=pageStep;
-        MovePage;
-       }
+        if (currentPage > 1)
+        {
+            currentPage--;
+            targetPos -= pageStep;
+            MovePage();
+        }
     }
-
 
     void MovePage()
     {
-       levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
-
+        levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
     }
 }

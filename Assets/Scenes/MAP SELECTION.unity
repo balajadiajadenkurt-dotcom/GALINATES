@@ -223,12 +223,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522995409}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1163795787}
+  - {fileID: 1907280164}
   m_Father: {fileID: 743253166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -329,6 +330,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d6ce116c719ce4eb78c346f7fd6a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwipeController
+  maxPage: 3
+  pageStep: {x: -800, y: 0, z: 0}
+  levelPagesRect: {fileID: 1163795787}
+  tweenTime: 0.3
+  tweenType: 6
 --- !u!114 &522995416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d6ce116c719ce4eb78c346f7fd6a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  maxPage: 0
+  pageStep: {x: 0, y: 0, z: 0}
+  levelPagesRect: {fileID: 0}
+  tweenTime: 0
+  tweenType: 0
 --- !u!1 &577072873
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +583,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 522995410}
-  - {fileID: 1907280164}
   - {fileID: 1748564891}
   m_Father: {fileID: 1228784415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1139,7 +1149,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1748564893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 522995416}
+        m_TargetAssemblyTypeName: SwipeController, Assembly-CSharp
+        m_MethodName: Previous
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1748564893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,12 +1271,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907280163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 743253166}
+  m_Father: {fileID: 522995410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1304,7 +1326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1907280166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 522995416}
+        m_TargetAssemblyTypeName: SwipeController, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1907280166
 MonoBehaviour:
   m_ObjectHideFlags: 0
