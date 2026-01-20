@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class TruckMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private float moveSpeed = 5f;
     private Rigidbody2D rb;
@@ -16,9 +17,9 @@ public class TruckMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = moveInput = moveSpeed;
+        rb.linearVelocity = moveInput = moveSpeed;
     }
-    publicvoid Move(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
     }
