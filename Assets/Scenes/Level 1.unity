@@ -339,7 +339,7 @@ Transform:
   m_GameObject: {fileID: 188080889}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.744, y: 4.9838, z: -2}
+  m_LocalPosition: {x: -10.614, y: 4.81, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -440,7 +440,7 @@ SpriteRenderer:
   m_SortingLayerID: -490946723
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1518655841373205598, guid: 30820da8fc1eee643b00a3f66d4ba428, type: 3}
+  m_Sprite: {fileID: -3406893740927204286, guid: 289fdc33210a742438a272ef5cc30f5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -460,8 +460,8 @@ Transform:
   m_GameObject: {fileID: 462885928}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.05, y: 4.9838, z: 0}
-  m_LocalScale: {x: 0.056933437, y: 0.06515856, z: 1}
+  m_LocalPosition: {x: -10.92, y: 4.81, z: 0}
+  m_LocalScale: {x: 0.6544786, y: 0.6291183, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -631,17 +631,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -5.419017}
+  m_Offset: {x: -0.07921302, y: -0.65164375}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 28.4375, y: 18.25}
+    oldSize: {x: 3.19, y: 1.72}
     newSize: {x: 28.4375, y: 18.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 28.4375, y: 5.1435513}
+  m_Size: {x: 2.4875076, y: 0.48721617}
   m_EdgeRadius: 0
 --- !u!1 &1567019739
 GameObject:
@@ -731,7 +731,7 @@ Transform:
   m_GameObject: {fileID: 1567019739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.744, y: 4.9838, z: -2}
+  m_LocalPosition: {x: -10.614, y: 4.81, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -874,7 +874,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 461e59c8332768d469f3535455f403d8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
