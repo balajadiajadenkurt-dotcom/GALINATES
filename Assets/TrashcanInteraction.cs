@@ -39,4 +39,4 @@ public class TrashcanInteraction : MonoBehaviour
             if (pressEUI != null) pressEUI.SetActive(false);
         }
     }
-}
+} 
