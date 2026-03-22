@@ -14,27 +14,39 @@ public class QuizManager : MonoBehaviour
     [Header("Questions")]
     public Question[] questions;
 
-    int currentQuestion;
-    int score = 0;
+    [Header("Progress")]
+    public int totalTrashcans = 9;
+    private int completed = 0;
 
-    // 🔓 Called when pressing E near trashcan
-    public void OpenQuestion()
+    [Header("Win UI")]
+    public GameObject winPanel;
+
+    private int currentQuestion;
+    private int score = 0;
+    private GameObject currentTrashcan;
+
+    // 🎯 OPEN SPECIFIC QUESTION (called by trashcan)
+    public void OpenSpecificQuestion(int index, GameObject trashcan)
     {
+        currentTrashcan = trashcan;
+
         questionPanel.SetActive(true);
         resultText.gameObject.SetActive(false);
+
+        currentQuestion = index;
         ShowQuestion();
     }
 
+    // 📜 SHOW QUESTION
     void ShowQuestion()
     {
-        currentQuestion = Random.Range(0, questions.Length);
         Question q = questions[currentQuestion];
 
         questionText.text = q.questionText;
 
         for (int i = 0; i < answerButtons.Length; i++)
         {
-            int index = i;
+            int idx = i;
 
             // Set answer text
             answerButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = q.answers[i];
@@ -42,14 +54,15 @@ public class QuizManager : MonoBehaviour
             // Reset color
             answerButtons[i].GetComponent<Image>().color = Color.white;
 
-            // Remove old listeners
+            // Reset listeners
             answerButtons[i].onClick.RemoveAllListeners();
 
-            // Add new listener
-            answerButtons[i].onClick.AddListener(() => CheckAnswer(index));
+            // Add click
+            answerButtons[i].onClick.AddListener(() => CheckAnswer(idx));
         }
     }
 
+    // ✅ CHECK ANSWER
     public void CheckAnswer(int index)
     {
         bool isCorrect = index == questions[currentQuestion].correctAnswer;
@@ -65,19 +78,38 @@ public class QuizManager : MonoBehaviour
             resultText.text = "Wrong!";
             answerButtons[index].GetComponent<Image>().color = Color.red;
 
-            // Highlight correct answer
             int correct = questions[currentQuestion].correctAnswer;
             answerButtons[correct].GetComponent<Image>().color = Color.green;
         }
 
         resultText.gameObject.SetActive(true);
 
+        // 🗑️ REMOVE USED TRASHCAN
+        if (currentTrashcan != null)
+        {
+            currentTrashcan.SetActive(false);
+        }
+
+        // 📊 TRACK PROGRESS
+        completed++;
+        CheckWin();
+
         StartCoroutine(CloseAfterDelay());
     }
 
+    // ⏳ CLOSE PANEL AFTER DELAY
     IEnumerator CloseAfterDelay()
     {
         yield return new WaitForSeconds(1.5f);
         questionPanel.SetActive(false);
+    }
+
+    // 🎉 WIN CHECK
+    void CheckWin()
+    {
+        if (completed >= totalTrashcans)
+        {
+            winPanel.SetActive(true);
+        }
     }
 }

@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class TrashcanInteraction : MonoBehaviour
 {
-    // Drag your "Press E" UI here
     public GameObject pressEUI;
+    public int questionIndex;
 
-    // Drag your question panel here
-    public GameObject questionPanel;
+    public QuizManager quizManager;
 
     private bool playerNear = false;
 
@@ -14,9 +13,10 @@ public class TrashcanInteraction : MonoBehaviour
     {
         if (playerNear && Input.GetKeyDown(KeyCode.E))
         {
-            if (questionPanel != null)
+            if (quizManager != null)
             {
-                questionPanel.SetActive(true);
+                quizManager.OpenSpecificQuestion(questionIndex, gameObject);
+
                 if (pressEUI != null) pressEUI.SetActive(false);
             }
         }
@@ -39,4 +39,4 @@ public class TrashcanInteraction : MonoBehaviour
             if (pressEUI != null) pressEUI.SetActive(false);
         }
     }
-} 
+}
