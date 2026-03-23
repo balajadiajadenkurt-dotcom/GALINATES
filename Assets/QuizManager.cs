@@ -15,7 +15,7 @@ public class QuizManager : MonoBehaviour
     public Question[] questions;
 
     [Header("Progress")]
-    public int totalTrashcans = 9;
+    public int totalTrashcans = 10;
     private int completed = 0;
 
     [Header("Win UI")]
@@ -25,7 +25,10 @@ public class QuizManager : MonoBehaviour
     private int score = 0;
     private GameObject currentTrashcan;
 
-    // 🎯 OPEN SPECIFIC QUESTION (called by trashcan)
+    // 🔒 LOCK SYSTEM
+    private bool answered = false;
+
+    // 🎯 OPEN QUESTION
     public void OpenSpecificQuestion(int index, GameObject trashcan)
     {
         currentTrashcan = trashcan;
@@ -34,6 +37,10 @@ public class QuizManager : MonoBehaviour
         resultText.gameObject.SetActive(false);
 
         currentQuestion = index;
+
+        // 🔓 RESET LOCK HERE
+        answered = false;
+
         ShowQuestion();
     }
 
@@ -48,16 +55,12 @@ public class QuizManager : MonoBehaviour
         {
             int idx = i;
 
-            // Set answer text
             answerButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = q.answers[i];
 
-            // Reset color
             answerButtons[i].GetComponent<Image>().color = Color.white;
 
-            // Reset listeners
             answerButtons[i].onClick.RemoveAllListeners();
 
-            // Add click
             answerButtons[i].onClick.AddListener(() => CheckAnswer(idx));
         }
     }
@@ -65,6 +68,10 @@ public class QuizManager : MonoBehaviour
     // ✅ CHECK ANSWER
     public void CheckAnswer(int index)
     {
+        // 🚫 PREVENT DOUBLE CLICK
+        if (answered) return;
+        answered = true;
+
         bool isCorrect = index == questions[currentQuestion].correctAnswer;
 
         if (isCorrect)
@@ -84,20 +91,20 @@ public class QuizManager : MonoBehaviour
 
         resultText.gameObject.SetActive(true);
 
-        // 🗑️ REMOVE USED TRASHCAN
+        // 🗑️ REMOVE TRASHCAN
         if (currentTrashcan != null)
         {
             currentTrashcan.SetActive(false);
         }
 
-        // 📊 TRACK PROGRESS
+        // 📊 PROGRESS
         completed++;
         CheckWin();
 
         StartCoroutine(CloseAfterDelay());
     }
 
-    // ⏳ CLOSE PANEL AFTER DELAY
+    // ⏳ CLOSE PANEL
     IEnumerator CloseAfterDelay()
     {
         yield return new WaitForSeconds(1.5f);
@@ -112,4 +119,4 @@ public class QuizManager : MonoBehaviour
             winPanel.SetActive(true);
         }
     }
-}
+} 
