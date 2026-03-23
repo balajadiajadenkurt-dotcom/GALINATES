@@ -1579,7 +1579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cca59ca91c3964ca1b480ecddbd072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashcanDrop
-  answerIndex: 1
+  answerIndex: 2
   quizManager: {fileID: 631898828}
 --- !u!114 &469167084
 MonoBehaviour:
@@ -2156,7 +2156,7 @@ MonoBehaviour:
     - A. Mahilig mag-aral
     - B. May malasakit sa iba
     - C. Mahilig maglaro
-    correctAnswer: 2
+    correctAnswer: 1
   - questionText: Ano ang gamit ng pang-abay sa pangungusap?
     answers:
     - A. Nagpapakita ng kilos
@@ -4941,7 +4941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1502120329
 RectTransform:
   m_ObjectHideFlags: 0
