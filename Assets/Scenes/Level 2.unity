@@ -202,7 +202,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.06431866, y: -1.3185139}
+  m_Offset: {x: -0.051013947, y: -2.4509363}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -212,8 +212,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.7313833, y: 6.6370277}
-  m_EdgeRadius: 1
+  m_Size: {x: 5.500718, y: 8.901866}
+  m_EdgeRadius: 0
 --- !u!212 &6418886
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -280,14 +280,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6418882}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.92, y: 7.32, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0053778985, w: 0.9999855}
+  m_LocalPosition: {x: 18.8573, y: -13.2153, z: 0}
+  m_LocalScale: {x: 0.13582082, y: 0.11136552, z: 0.38787183}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1202146006}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.616}
 --- !u!1 &64678050
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +371,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.0413704, y: -1.3185139}
+  m_Offset: {x: -2.230795, y: -1.3185139}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -380,8 +380,8 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 7.685487, y: 6.6370277}
+  m_AutoTiling: 1
+  m_Size: {x: 9.805489, y: 6.6370277}
   m_EdgeRadius: 0
 --- !u!212 &64678054
 SpriteRenderer:
@@ -450,8 +450,8 @@ Transform:
   m_GameObject: {fileID: 64678050}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.52, y: 15.71, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 16.45, y: -25.73, z: 0}
+  m_LocalScale: {x: 0.13418867, y: 0.110170774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 952842020}
@@ -1906,7 +1906,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.8549669, y: -1.3185139}
+  m_Offset: {x: -0.1954453, y: -2.5782537}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1916,7 +1916,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.31268, y: 6.6370277}
+  m_Size: {x: 5.2118554, y: 9.156511}
   m_EdgeRadius: 0
 --- !u!212 &331206918
 SpriteRenderer:
@@ -1985,8 +1985,8 @@ Transform:
   m_GameObject: {fileID: 331206914}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.45, y: 12.11, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 0.14, y: -17.206, z: 0}
+  m_LocalScale: {x: 0.12762034, y: 0.106413744, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1499214788}
@@ -2071,8 +2071,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -2532,7 +2532,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.36308503, y: -1.7137442}
+  m_Offset: {x: -0.36308503, y: 2.0219984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2542,7 +2542,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.876576, y: 7.4274883}
+  m_Size: {x: 4.876576, y: 9.151672}
   m_EdgeRadius: 0
 --- !u!212 &469167086
 SpriteRenderer:
@@ -2611,8 +2611,8 @@ Transform:
   m_GameObject: {fileID: 469167082}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.19, y: 9.14, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 13.57, y: -22.57, z: 0}
+  m_LocalScale: {x: 0.14235547, y: 0.109401785, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1337827282}
@@ -3483,66 +3483,65 @@ MonoBehaviour:
   - {fileID: 980968592}
   resultText: {fileID: 1712483913}
   questions:
-  - questionText: "Ano ang ibig sabihin ng salitang \u201Ckabaitan\u201D?"
+  - questionText: What planet do we live on?
     answers:
-    - A. KAPANGYARIHAN
-    - B. PAGKA-MAKASARILI
-    - PAGKAKAROON NG MALASAKIT
-    correctAnswer: 2
-  - questionText: Ano ang tawag sa mga salitang may magkasalungat na kahulugan
-    answers:
-    - A. Pag-uugnay
-    - B. Antonymo
-    - C. Sinonymo
+    - A. Moon
+    - B. Earth
+    - C. Sun
     correctAnswer: 1
-  - questionText: "Paano ginagamit ang salitang \u201Cng\u201D sa pangungusap?"
+  - questionText: What do we use to see?
     answers:
-    - A. Para sa mga pandiwa
-    - B. Para sa mga pangalan
-    - D. Para sa mga pang-abay
+    - A. Ears
+    - B. Eyes
+    - C. Nose
     correctAnswer: 1
-  - questionText: "Ano ang ibig sabihin ng \u201Csalitang magkasalungat\u201D?"
+  - questionText: What do plants need to grow?
     answers:
-    - A. Salitang magkakahawig
-    - B. Salitang magkaiba ang ibig sabihin
-    - C. Salitang hindi maunawaan
-    correctAnswer: 1
-  - questionText: "Ano ang ibig sabihin ng salitang \u201Cmatulungin\u201D?"
-    answers:
-    - A. Mahilig mag-aral
-    - B. May malasakit sa iba
-    - C. Mahilig maglaro
-    correctAnswer: 1
-  - questionText: Ano ang gamit ng pang-abay sa pangungusap?
-    answers:
-    - A. Nagpapakita ng kilos
-    - B. Nagpapakilala ng lugar
-    - 'C. Nagbibigay ng tindi ng kilos '
-    correctAnswer: 2
-  - questionText: "Ano ang ibig sabihin ng \u201Cmagalang\u201D?"
-    answers:
-    - A. Marunong rumespeto
-    - B. Hindi tumutulong
-    - C. Laging malungkot
+    - A. Sunlight
+    - B. Toys
+    - C. Shoes
     correctAnswer: 0
-  - questionText: "Paano ginagamit ang mga salitang \u201Cang,\u201D \u201Cng,\u201D
-      at \u201Csa\u201D?"
+  - questionText: What pulls things down to the ground?
     answers:
-    - A. Para sa mga pang-abay
-    - B. Para sa mga pandiwa
-    - C. Para sa mga pangngalan
+    - A. Wind
+    - B. Light
+    - C. Gravity
     correctAnswer: 2
-  - questionText: "Ano ang ibig sabihin ng \u201Cpagkakaisa\u201D?"
+  - questionText: What gas do humans need to breathe?
     answers:
-    - A. Pagiging maligaya
-    - B. Pagkakaroon ng sama-sama
-    - C. Pagiging malakas
+    - A. Helium
+    - B. Oxygen
+    - C. Carbon dioxide
     correctAnswer: 1
-  - questionText: Anong uri ng pangungusap ang nag-uutos?
+  - questionText: What is the Sun?
     answers:
-    - A. Pautos
-    - B. Pakiusap
-    - C. Patanong
+    - A. An planet
+    - B. A planet
+    - C. A star
+    correctAnswer: 2
+  - questionText: "Why can\u2019t humans live on the Moon easily?"
+    answers:
+    - A. No oxygen to breathe
+    - B. Too many trees
+    - C. Too much rain
+    correctAnswer: 0
+  - questionText: What is the smallest unit of an element?
+    answers:
+    - A. Molecule
+    - B. Cell
+    - C. Atom
+    correctAnswer: 2
+  - questionText: Which of these is a metal?
+    answers:
+    - A. Wood
+    - B. Plastic
+    - C. Iron
+    correctAnswer: 2
+  - questionText: Which of these can flow?
+    answers:
+    - A. Liquid
+    - B. Solid
+    - C. Metal
     correctAnswer: 0
   totalTrashcans: 10
   winPanel: {fileID: 1502120328}
@@ -4054,8 +4053,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -4577,8 +4576,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -4717,7 +4716,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.69683456, y: -1.3185139}
+  m_Offset: {x: 1.641551, y: -1.3185139}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4727,7 +4726,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.996415, y: 6.6370277}
+  m_Size: {x: 8.885845, y: 6.6370277}
   m_EdgeRadius: 0
 --- !u!212 &797086992
 SpriteRenderer:
@@ -4796,8 +4795,8 @@ Transform:
   m_GameObject: {fileID: 797086988}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.9, y: 16.09, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 3.243, y: -25.47, z: 0}
+  m_LocalScale: {x: 0.13116169, y: 0.10208242, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1817288808}
@@ -4886,7 +4885,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.0658059, y: -0.61816573}
+  m_Offset: {x: -0.20238972, y: -1.9541672}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4896,7 +4895,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.734358, y: 8.037724}
+  m_Size: {x: 5.1979666, y: 10.709731}
   m_EdgeRadius: 0
 --- !u!212 &819868208
 SpriteRenderer:
@@ -4965,8 +4964,8 @@ Transform:
   m_GameObject: {fileID: 819868204}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.84, y: 13.36, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 5.764, y: -21.132, z: 0}
+  m_LocalScale: {x: 0.112826265, y: 0.10709987, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 475739754}
@@ -5051,8 +5050,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -6139,8 +6138,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -6275,8 +6274,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -6723,8 +6722,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -7307,8 +7306,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -7831,8 +7830,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -8591,8 +8590,8 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_TextStyleHashCode: 2425
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -13259,7 +13258,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.1613839, y: -1.3185139}
+  m_Offset: {x: -0.05496645, y: 2.0598469}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13269,7 +13268,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.9255137, y: 6.6370277}
+  m_Size: {x: 5.492813, y: 9.578989}
   m_EdgeRadius: 0
 --- !u!212 &1741953722
 SpriteRenderer:
@@ -13338,8 +13337,8 @@ Transform:
   m_GameObject: {fileID: 1741953718}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.78, y: 6.66, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 6.28, y: -14.6, z: 0}
+  m_LocalScale: {x: 0.14465152, y: 0.10426103, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 651823926}
@@ -13530,7 +13529,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.06431866, y: -1.852113}
+  m_Offset: {x: 1.8635197, y: -1.544471}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13540,7 +13539,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.7313833, y: 7.704226}
+  m_Size: {x: 9.3297825, y: 7.088941}
   m_EdgeRadius: 0
 --- !u!212 &1811164146
 SpriteRenderer:
@@ -13609,8 +13608,8 @@ Transform:
   m_GameObject: {fileID: 1811164142}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.57, y: 9.21, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 3.23, y: -10.58, z: 0}
+  m_LocalScale: {x: 0.12444821, y: 0.105889715, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1764721150}
@@ -13699,7 +13698,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.0283539, y: -1.3185139}
+  m_Offset: {x: 0.33955288, y: 1.4113197}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13709,7 +13708,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.9167285, y: 6.6370277}
+  m_Size: {x: 5.180915, y: 12.096695}
   m_EdgeRadius: 0
 --- !u!212 &1813373116
 SpriteRenderer:
@@ -13778,8 +13777,8 @@ Transform:
   m_GameObject: {fileID: 1813373112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.52, y: 4.67, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 19.84, y: -18.7, z: 0}
+  m_LocalScale: {x: 0.13183053, y: 0.11147616, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 291314173}
@@ -13956,7 +13955,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.75353956, y: -0.383739}
+  m_Offset: {x: -0.75353956, y: -1.656182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13966,7 +13965,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.3671, y: 8.5065775}
+  m_Size: {x: 7.3671, y: 11.051462}
   m_EdgeRadius: 0
 --- !u!212 &1824009358
 SpriteRenderer:
@@ -14035,8 +14034,8 @@ Transform:
   m_GameObject: {fileID: 1824009355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.01, y: 2.94, z: 0}
-  m_LocalScale: {x: 0.35460186, y: 0.2802258, z: 1}
+  m_LocalPosition: {x: 12.15, y: -17.24, z: 0}
+  m_LocalScale: {x: 0.1311847, y: 0.1068815, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1042944287}
