@@ -7943,67 +7943,66 @@ MonoBehaviour:
   - {fileID: 980968592}
   resultText: {fileID: 1712483913}
   questions:
-  - questionText: "Ano ang ibig sabihin ng salitang \u201Ckabaitan\u201D?"
+  - questionText: 7 + 5 = ?
     answers:
-    - A. KAPANGYARIHAN
-    - B. PAGKA-MAKASARILI
-    - PAGKAKAROON NG MALASAKIT
+    - A. 10
+    - B. 11
+    - C. 12
     correctAnswer: 2
-  - questionText: Ano ang tawag sa mga salitang may magkasalungat na kahulugan
+  - questionText: "15 \u2212 9 = ?"
     answers:
-    - A. Pag-uugnay
-    - B. Antonymo
-    - C. Sinonymo
+    - A. 5
+    - B. 6
+    - C. 7
     correctAnswer: 1
-  - questionText: "Paano ginagamit ang salitang \u201Cng\u201D sa pangungusap?"
+  - questionText: "6 \xD7 4 = ?"
     answers:
-    - A. Para sa mga pandiwa
-    - B. Para sa mga pangalan
-    - D. Para sa mga pang-abay
-    correctAnswer: 1
-  - questionText: "Ano ang ibig sabihin ng \u201Csalitang magkasalungat\u201D?"
-    answers:
-    - A. Salitang magkakahawig
-    - B. Salitang magkaiba ang ibig sabihin
-    - C. Salitang hindi maunawaan
-    correctAnswer: 1
-  - questionText: "Ano ang ibig sabihin ng salitang \u201Cmatulungin\u201D?"
-    answers:
-    - A. Mahilig mag-aral
-    - B. May malasakit sa iba
-    - C. Mahilig maglaro
-    correctAnswer: 1
-  - questionText: Ano ang gamit ng pang-abay sa pangungusap?
-    answers:
-    - A. Nagpapakita ng kilos
-    - B. Nagpapakilala ng lugar
-    - 'C. Nagbibigay ng tindi ng kilos '
+    - A. 20
+    - B. 22
+    - C. 24
     correctAnswer: 2
-  - questionText: "Ano ang ibig sabihin ng \u201Cmagalang\u201D?"
+  - questionText: "20 \xF7 5 = ?"
     answers:
-    - A. Marunong rumespeto
-    - B. Hindi tumutulong
-    - C. Laging malungkot
-    correctAnswer: 0
-  - questionText: "Paano ginagamit ang mga salitang \u201Cang,\u201D \u201Cng,\u201D
-      at \u201Csa\u201D?"
-    answers:
-    - A. Para sa mga pang-abay
-    - B. Para sa mga pandiwa
-    - C. Para sa mga pangngalan
+    - A. 2
+    - B. 3
+    - C. 4
     correctAnswer: 2
-  - questionText: "Ano ang ibig sabihin ng \u201Cpagkakaisa\u201D?"
+  - questionText: "9 + 8 \u2212 6 = ?"
     answers:
-    - A. Pagiging maligaya
-    - B. Pagkakaroon ng sama-sama
-    - C. Pagiging malakas
+    - A. 10
+    - B. 11
+    - C. 12
     correctAnswer: 1
-  - questionText: Anong uri ng pangungusap ang nag-uutos?
+  - questionText: Anna has 10 apples. She gives 3 away. How many are left?
     answers:
-    - A. Pautos
-    - B. Pakiusap
-    - C. Patanong
-    correctAnswer: 0
+    - A. 6
+    - B. 7
+    - C. 8
+    correctAnswer: 1
+  - questionText: 4 boxes with 5 candies each. Total candies?
+    answers:
+    - A. 15
+    - B. 18
+    - C. 20
+    correctAnswer: 2
+  - questionText: Mark has 12 balloons. 4 popped. How many remain?
+    answers:
+    - A. 6
+    - B. 7
+    - C. 8
+    correctAnswer: 2
+  - questionText: A dog has 4 legs. How many legs do 3 dogs have?
+    answers:
+    - A. 10
+    - B. 11
+    - C. 12
+    correctAnswer: 2
+  - questionText: Lisa buys 2 pencils for 5 pesos each. Total cost?
+    answers:
+    - A. 5 pesos
+    - B. 8 pesos
+    - C. 10 pesos
+    correctAnswer: 2
   totalTrashcans: 10
   winPanel: {fileID: 1502120328}
 --- !u!4 &631898829
