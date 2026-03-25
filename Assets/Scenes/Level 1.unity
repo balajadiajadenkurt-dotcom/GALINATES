@@ -817,7 +817,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
+ HEAD
 --- !u!1 &291314169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,8 +1088,8 @@ Transform:
   - {fileID: 1499214788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
+
+ 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
 --- !u!1 &356187846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,7 +4042,7 @@ RectTransform:
   m_AnchoredPosition: {x: 47.90725, y: -20.44066}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
+ HEAD
 --- !u!1 &1255888471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,8 +4308,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290361152}
   m_CullTransparentMesh: 1
-=======
->>>>>>> 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
+
+
+ 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
 --- !u!1 &1337827278
 GameObject:
   m_ObjectHideFlags: 0
@@ -8942,7 +8943,7 @@ Transform:
   - {fileID: 651823926}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
+ HEAD
 --- !u!1 &1764721146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9510,8 +9511,8 @@ Transform:
   - {fileID: 291314173}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
+
+ 0d3b097da9c64289e4baaafeacc5b2d3fedd784b
 --- !u!1 &1817288804
 GameObject:
   m_ObjectHideFlags: 0
