@@ -25,7 +25,6 @@ public class QuizManager : MonoBehaviour
     private int score = 0;
     private GameObject currentTrashcan;
 
-    // 🔒 LOCK SYSTEM
     private bool answered = false;
 
     // 🎯 OPEN QUESTION
@@ -37,8 +36,6 @@ public class QuizManager : MonoBehaviour
         resultText.gameObject.SetActive(false);
 
         currentQuestion = index;
-
-        // 🔓 RESET LOCK HERE
         answered = false;
 
         ShowQuestion();
@@ -56,7 +53,6 @@ public class QuizManager : MonoBehaviour
             int idx = i;
 
             answerButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = q.answers[i];
-
             answerButtons[i].GetComponent<Image>().color = Color.white;
 
             answerButtons[i].onClick.RemoveAllListeners();
@@ -68,7 +64,6 @@ public class QuizManager : MonoBehaviour
     // ✅ CHECK ANSWER
     public void CheckAnswer(int index)
     {
-        // 🚫 PREVENT DOUBLE CLICK
         if (answered) return;
         answered = true;
 
@@ -79,6 +74,10 @@ public class QuizManager : MonoBehaviour
             score += 10;
             resultText.text = "Correct!";
             answerButtons[index].GetComponent<Image>().color = Color.green;
+
+            // 🔊 SOUND
+            if (AudioManager.instance != null)
+                AudioManager.instance.PlaySFX(AudioManager.instance.correctSound);
         }
         else
         {
@@ -87,17 +86,18 @@ public class QuizManager : MonoBehaviour
 
             int correct = questions[currentQuestion].correctAnswer;
             answerButtons[correct].GetComponent<Image>().color = Color.green;
+
+            // 🔊 SOUND
+            if (AudioManager.instance != null)
+                AudioManager.instance.PlaySFX(AudioManager.instance.wrongSound);
         }
 
         resultText.gameObject.SetActive(true);
 
         // 🗑️ REMOVE TRASHCAN
         if (currentTrashcan != null)
-        {
             currentTrashcan.SetActive(false);
-        }
 
-        // 📊 PROGRESS
         completed++;
         CheckWin();
 
@@ -119,4 +119,4 @@ public class QuizManager : MonoBehaviour
             winPanel.SetActive(true);
         }
     }
-} 
+}
