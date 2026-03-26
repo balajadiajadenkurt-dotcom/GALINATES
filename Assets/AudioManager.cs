@@ -17,6 +17,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip wrongSound;
     public AudioClip trashcanSound;
 
+    [Header("Settings")]
+    public bool isMuted = false;
+
     void Awake()
     {
         instance = this;
@@ -24,8 +27,16 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // 🎵 Play background music automatically
-        if (musicSource != null && backgroundMusic != null)
+        // Load saved volume
+        float savedVolume = PlayerPrefs.GetFloat("MusicVolume", 1f);
+        musicSource.volume = savedVolume;
+
+        // Load mute state
+        isMuted = PlayerPrefs.GetInt("Muted", 0) == 1;
+        musicSource.mute = isMuted;
+
+        // Play music
+        if (backgroundMusic != null)
         {
             musicSource.clip = backgroundMusic;
             musicSource.loop = true;
@@ -33,7 +44,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // 🔊 GENERIC SFX PLAYER
+    // 🎵 TOGGLE MUSIC ON/OFF
+    public void ToggleMusic()
+    {
+        isMuted = !isMuted;
+
+        if (musicSource != null)
+        {
+            musicSource.mute = isMuted;
+        }
+
+        PlayerPrefs.SetInt("Muted", isMuted ? 1 : 0);
+    }
+
+    // 🔊 PLAY SFX
     public void PlaySFX(AudioClip clip)
     {
         if (sfxSource != null && clip != null)
@@ -48,19 +72,19 @@ public class AudioManager : MonoBehaviour
         PlaySFX(clickSound);
     }
 
-    // ✅ CORRECT ANSWER
+    // ✅ CORRECT
     public void PlayCorrect()
     {
         PlaySFX(correctSound);
     }
 
-    // ❌ WRONG ANSWER
+    // ❌ WRONG
     public void PlayWrong()
     {
         PlaySFX(wrongSound);
     }
 
-    // 🗑️ TRASHCAN OPEN
+    // 🗑️ TRASHCAN
     public void PlayTrashcan()
     {
         PlaySFX(trashcanSound);
